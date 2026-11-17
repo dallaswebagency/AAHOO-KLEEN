@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAHOO KLEEN | NFPA 96 Kitchen Exhaust Hood Cleaning in Calgary</title>
+<meta name="description" content="Certified commercial kitchen exhaust hood cleaning, grease trap cleaning, kitchen equipment cleaning, pressure washing and residential cleaning in Calgary and surrounding areas. Free estimates.">
+<link rel="icon" href="images/logo-badge.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#d3232b; --red-deep:#9e1419; --blue:#1d6fc4; --blue-ice:#d9e9f8;
+  --ink:#121417; --steel:#1d2126; --steel-2:#2a2f36; --mute:#8b929b;
+  --paper:#f2f0eb; --paper-2:#e7e4dc; --line:rgba(18,20,23,.14);
+  --display:'Big Shoulders Display',Impact,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+  --body:'Public Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,92vw);margin:0 auto}
+.mono{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
+h1,h2,h3{font-family:var(--display);font-weight:800;line-height:.95;letter-spacing:.005em;text-transform:uppercase}
+.btn{display:inline-flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.8rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:1rem 1.4rem;border:2px solid transparent;transition:.25s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-deep)}
+.btn-line{border-color:currentColor}
+.btn-line:hover{background:#fff;color:var(--ink);border-color:#fff}
+.btn svg{width:16px;height:16px}
+
+/* top strip */
+.strip{background:var(--ink);color:#c9ced4;border-bottom:1px solid rgba(255,255,255,.08)}
+.strip .wrap{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;flex-wrap:wrap}
+.strip a:hover{color:#fff}
+.strip .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#3ccf6e;margin-right:.5rem;box-shadow:0 0 0 3px rgba(60,207,110,.2)}
+.strip-r{display:flex;gap:1.6rem}
+
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(18,20,23,.96);backdrop-filter:blur(8px);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:1.5rem}
+.logo img{height:76px;width:auto}
+nav ul{display:flex;list-style:none;gap:1.5rem}
+nav a{font-size:.88rem;font-weight:500;color:#cfd4da;position:relative;padding:.3rem 0}
+nav a:hover,nav a.on{color:#fff}
+nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--red)}
+.h-call{display:flex;align-items:center;gap:.8rem}
+.h-call small{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.14em;color:var(--mute);text-transform:uppercase}
+.h-call strong{font-family:var(--display);font-size:1.45rem;letter-spacing:.02em}
+.h-call .ic{width:44px;height:44px;background:var(--red);display:grid;place-items:center}
+.burger{display:none;background:none;border:0;color:#fff;cursor:pointer}
+
+/* hero */
+.hero{background:var(--steel);color:#fff;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:660px}
+.hero-txt{padding:5.5rem 3.5rem 5rem 0;position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{display:inline-flex;align-items:center;gap:.7rem;color:#ff8d92}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--red)}
+.hero h1{font-size:clamp(3.2rem,7vw,6.4rem);margin:1.2rem 0 .3rem}
+.hero h1 em{font-style:normal;color:transparent;-webkit-text-stroke:2px #fff}
+.hero .kicker{font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:1.6rem;color:var(--blue-ice);letter-spacing:.04em}
+.hero p.lead{max-width:520px;color:#b9c0c8;margin:1.4rem 0 2.2rem;font-size:1.06rem}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap}
+.hero-ctas .btn-line{color:#fff}
+.hero-img{position:relative;margin-right:calc((100vw - min(1240px,92vw))/-2)}
+.hero-img img{width:100%;height:100%;object-fit:cover;clip-path:polygon(14% 0,100% 0,100% 100%,0 100%)}
+.hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--steel) 0%,rgba(29,33,38,0) 30%);pointer-events:none}
+
+/* service tag */
+.tag{position:absolute;left:-2%;bottom:56px;z-index:3;width:290px;background:#fffdf7;color:var(--ink);box-shadow:0 30px 60px rgba(0,0,0,.45);transform:rotate(-3deg);transform-origin:top center}
+.tag::before{content:"";position:absolute;top:-34px;left:50%;width:2px;height:40px;background:#9aa1aa}
+.tag-head{background:var(--red);color:#fff;padding:1.1rem 1rem .7rem;text-align:center;position:relative}
+.tag-head .hole{width:16px;height:16px;border-radius:50%;background:var(--steel);border:3px solid #fff;margin:-.4rem auto .5rem}
+.tag-head b{font-family:var(--display);font-size:1.35rem;letter-spacing:.05em;display:block}
+.tag-body{padding:.9rem 1.1rem 1.1rem}
+.tag-row{display:flex;justify-content:space-between;gap:1rem;padding:.55rem 0;border-bottom:1px dashed #c9c4b8;font-size:.82rem}
+.tag-row span:first-child{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:#6c727a;padding-top:.15rem}
+.tag-row span:last-child{font-weight:700;text-align:right}
+.tag-foot{font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red-deep);text-align:center;padding-top:.8rem}
+
+/* outcome rail */
+.rail{background:var(--red);color:#fff;overflow:hidden}
+.rail-track{display:flex;gap:3rem;white-space:nowrap;padding:1.15rem 0;animation:slide 32s linear infinite;width:max-content}
+.rail span{font-family:var(--display);font-weight:800;font-size:1.6rem;text-transform:uppercase;letter-spacing:.04em;display:flex;align-items:center;gap:3rem}
+.rail span::after{content:"";width:12px;height:12px;background:#fff;transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* intro */
+.intro{padding:7rem 0 5rem}
+.intro-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:5rem;align-items:end}
+.sec-no{color:var(--red);display:block;margin-bottom:1rem}
+.intro h2{font-size:clamp(2.6rem,5vw,4.4rem)}
+.intro h2 span{color:var(--red)}
+.intro p{font-size:1.12rem;color:#3d434a;margin-bottom:1.6rem}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:2px solid var(--ink);margin-top:4rem}
+.fact{padding:1.6rem 1.6rem 0 0}
+.fact+.fact{padding-left:1.6rem;border-left:1px solid var(--line)}
+.fact b{font-family:var(--display);font-size:3.6rem;line-height:1;display:block}
+.fact b sup{font-size:1.4rem;color:var(--red);vertical-align:top}
+.fact span{font-size:.92rem;color:#565c63}
+
+/* services index */
+.svc{background:var(--ink);color:#fff;padding:6.5rem 0}
+.svc-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3.5rem;flex-wrap:wrap}
+.svc-head h2{font-size:clamp(2.6rem,5vw,4.4rem)}
+.svc-head p{max-width:400px;color:#9ba2ab}
+.svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+.svc-view{position:sticky;top:110px;aspect-ratio:4/3.3;overflow:hidden;background:var(--steel-2)}
+.svc-view img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.04);transition:opacity .5s,transform .8s}
+.svc-view img.on{opacity:1;transform:scale(1)}
+.svc-view .cap{position:absolute;left:0;bottom:0;background:var(--red);color:#fff;padding:.7rem 1rem;z-index:2}
+.grp{color:var(--mute);padding:1.4rem 0 .6rem;border-bottom:1px solid rgba(255,255,255,.12)}
+.grp:first-child{padding-top:0}
+.svc-row{display:grid;grid-template-columns:56px 1fr 28px;gap:1rem;align-items:start;padding:1.5rem 0;border-bottom:1px solid rgba(255,255,255,.12);cursor:pointer;transition:.3s}
+.svc-row .n{font-family:var(--mono);color:var(--mute);font-size:.85rem;padding-top:.4rem}
+.svc-row h3{font-size:1.85rem;transition:color .3s}
+.svc-row p{color:#9ba2ab;font-size:.95rem;max-height:0;overflow:hidden;transition:max-height .45s,margin .45s}
+.svc-row .arr{width:28px;height:28px;margin-top:.3rem;transition:transform .3s;color:var(--mute)}
+.svc-row.on h3{color:#fff}
+.svc-row.on .n{color:var(--red)}
+.svc-row.on p{max-height:120px;margin-top:.6rem}
+.svc-row.on .arr{transform:rotate(-45deg);color:var(--red)}
+.svc-row:not(.on) h3{color:#cdd2d8}
+.svc-more{margin-top:2.4rem;color:#fff}
+
+/* proof */
+.proof{padding:7rem 0}
+.proof-top{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end;margin-bottom:2.8rem}
+.proof h2{font-size:clamp(2.6rem,5vw,4.4rem);max-width:720px}
+.proof h2 span{color:var(--blue)}
+.reel{display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px}
+.reel figure{aspect-ratio:1}
+.reel figure{position:relative;overflow:hidden;background:var(--paper-2)}
+.reel figure:first-child{grid-row:span 2}
+.reel img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.reel figure:hover img{transform:scale(1.04)}
+.reel figcaption{position:absolute;left:12px;bottom:12px;background:var(--ink);color:#fff;padding:.45rem .7rem}
+.reel .note{background:var(--blue);color:#fff;padding:2rem;display:flex;flex-direction:column;justify-content:space-between}
+.reel .note p{font-family:var(--display);font-weight:700;font-size:1.7rem;line-height:1.1;text-transform:uppercase}
+.reel .note a{border-bottom:2px solid #fff;align-self:flex-start;padding-bottom:.2rem}
+
+/* nfpa */
+.nfpa{background:var(--paper-2);padding:7rem 0;position:relative}
+.nfpa-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:5rem;align-items:start}
+.nfpa-badge{display:flex;align-items:center;gap:1rem;margin-bottom:1.6rem}
+.nfpa-badge img{width:62px;mix-blend-mode:multiply}
+.nfpa h2{font-size:clamp(2.4rem,4.6vw,4rem)}
+.nfpa .sub{color:#4a5057;margin:1.4rem 0 2rem;max-width:440px}
+.picker{display:flex;flex-direction:column;gap:.5rem}
+.picker button{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:1rem 1.2rem;background:#fff;border-left:4px solid transparent;font-weight:600;font-size:.98rem;transition:.25s}
+.picker button small{font-family:var(--mono);font-size:.7rem;color:var(--mute);letter-spacing:.1em;text-transform:uppercase}
+.picker button.on{border-left-color:var(--red);background:var(--ink);color:#fff}
+.picker button.on small{color:#ff8d92}
+.board{background:var(--ink);color:#fff;padding:2.6rem}
+.board-top{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(255,255,255,.14);padding-bottom:1.4rem;margin-bottom:1.8rem;gap:1rem;flex-wrap:wrap}
+.board-top b{font-family:var(--display);font-size:clamp(3rem,6vw,5rem);line-height:1;text-transform:uppercase;color:#fff}
+.board-top .per{font-family:var(--mono);color:#ff8d92;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}
+.months{display:grid;grid-template-columns:repeat(12,1fr);gap:6px;margin-bottom:.6rem}
+.months i{height:64px;background:var(--steel-2);position:relative;transition:background .35s}
+.months i.hit{background:var(--red)}
+.months i.hit::after{content:"";position:absolute;left:50%;top:50%;width:10px;height:10px;border:2px solid #fff;border-radius:50%;transform:translate(-50%,-50%)}
+.mlabels{display:grid;grid-template-columns:repeat(12,1fr);gap:6px;font-family:var(--mono);font-size:.62rem;color:var(--mute);text-align:center;margin-bottom:2rem}
+.board p{color:#b9c0c8;max-width:560px}
+.board .ex{margin-top:1.2rem;padding-top:1.2rem;border-top:1px dashed rgba(255,255,255,.2);display:flex;gap:.6rem;flex-wrap:wrap}
+.board .ex span{font-family:var(--mono);font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;border:1px solid rgba(255,255,255,.25);padding:.35rem .6rem}
+
+/* service day report */
+.report{padding:7rem 0}
+.report-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:4.5rem;align-items:center}
+.report-img{position:relative}
+.report-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.report-img .stamp{position:absolute;right:-26px;top:-26px;width:150px;height:150px;border-radius:50%;background:var(--paper);display:grid;place-items:center;padding:10px}
+.report-img .stamp img{aspect-ratio:auto;width:100%;height:auto;object-fit:contain}
+.report h2{font-size:clamp(2.4rem,4.6vw,4rem);margin-bottom:2rem}
+.sheet{background:#fff;border:1px solid var(--line)}
+.sheet-row{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid var(--line)}
+.sheet-row:last-child{border-bottom:0}
+.sheet-row dt{padding:1.1rem 1.2rem;background:#faf9f6;border-right:1px solid var(--line);font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--red-deep)}
+.sheet-row dd{padding:1.1rem 1.3rem;font-size:.97rem;color:#30353b}
+.sheet-row dd b{color:var(--ink)}
+
+/* credentials */
+.creds{background:var(--steel);color:#fff;padding:6.5rem 0}
+.creds-head{text-align:center;max-width:680px;margin:0 auto 3.5rem}
+.creds-head h2{font-size:clamp(2.4rem,4.6vw,4rem);margin:1rem 0}
+.creds-head p{color:#9ba2ab}
+.wall{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.wall .c{background:#fff;display:grid;place-items:center;padding:1.2rem;position:relative}
+.wall .c img{max-height:100%;width:auto;object-fit:contain}
+.wall .lg{grid-column:span 2;height:300px;padding:1rem}
+.wall .sm{grid-column:span 2;height:200px}
+.wall .c{display:block;overflow:hidden}
+.wall .c img{width:100%;height:100%;max-height:none;object-fit:contain}
+.wall .c .lbl{position:absolute;left:0;bottom:0;background:var(--ink);color:#fff;padding:.35rem .6rem;font-family:var(--mono);font-size:.62rem;letter-spacing:.12em;text-transform:uppercase}
+
+/* reviews */
+.reviews{padding:7rem 0}
+.rev-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:5rem}
+.rev-side h2{font-size:clamp(2.4rem,4.6vw,4rem);margin:1rem 0 1.5rem}
+.g-score{display:flex;align-items:center;gap:1rem;padding:1.3rem 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-bottom:2rem}
+.g-score b{font-family:var(--display);font-size:3.4rem;line-height:1}
+.stars{color:#f5a623;letter-spacing:.15em;font-size:1.1rem}
+.rev-list{display:flex;flex-direction:column}
+.rev{padding:2rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:64px 1fr;gap:1.4rem}
+.rev:first-child{padding-top:0}
+.rev .av{width:64px;height:64px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:var(--display);font-size:1.6rem}
+.rev:nth-child(2) .av{background:var(--red)}
+.rev:nth-child(3) .av{background:var(--blue)}
+.rev blockquote{font-size:1.15rem;line-height:1.55;color:#262a2f}
+.rev cite{display:block;margin-top:.8rem;font-style:normal;font-weight:700}
+.rev cite small{font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);font-weight:400;margin-left:.6rem}
+
+/* faq */
+.faq{background:var(--paper-2);padding:7rem 0}
+.faq-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:5rem}
+.faq h2{font-size:clamp(2.4rem,4.6vw,4rem);margin:1rem 0 1.5rem}
+.faq-side p{color:#4a5057;margin-bottom:2rem}
+details{border-top:2px solid var(--ink)}
+details:last-child{border-bottom:2px solid var(--ink)}
+summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:48px 1fr 30px;align-items:center;gap:1rem;padding:1.5rem 0;font-weight:700;font-size:1.12rem}
+summary::-webkit-details-marker{display:none}
+summary .q{font-family:var(--mono);color:var(--red);font-size:.8rem}
+summary .pm{width:30px;height:30px;border:2px solid var(--ink);display:grid;place-items:center;font-family:var(--mono);transition:.3s}
+details[open] summary .pm{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(45deg)}
+details .a{padding:0 3rem 1.6rem 64px;color:#3d434a}
+
+/* areas + cta */
+.areas{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.areas-bg{position:absolute;inset:0;background:url(images/pressure-washing-2.jpg) center/cover;opacity:.22}
+.areas .wrap{position:relative;padding:7rem 0;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+.areas h2{font-size:clamp(3rem,6vw,5.4rem)}
+.areas h2 span{color:var(--red)}
+.areas .lead{color:#c3c9d0;margin:1.4rem 0 2.2rem;max-width:520px;font-size:1.06rem}
+.areas .btn-line{color:#fff}
+.town-box{background:rgba(18,20,23,.85);border:1px solid rgba(255,255,255,.14);padding:2rem}
+.town-box .mono{color:#ff8d92;margin-bottom:1.2rem;display:block}
+.towns{display:grid;grid-template-columns:1fr 1fr;gap:0 1.5rem}
+.towns li{list-style:none;padding:.75rem 0;border-bottom:1px solid rgba(255,255,255,.1);display:flex;align-items:center;gap:.7rem;font-weight:500}
+.towns li::before{content:"";width:8px;height:8px;background:var(--red);transform:rotate(45deg);flex:none}
+.open24{margin-top:1.4rem;display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#cfd4da}
+
+/* footer */
+footer{background:#0b0c0e;color:#9ba2ab;padding:5rem 0 0}
+.f-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:3rem;padding-bottom:4rem}
+.f-brand img{width:130px;margin-bottom:1.2rem}
+.f-brand p{font-size:.92rem;max-width:300px}
+footer h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#fff;margin-bottom:1.3rem;font-weight:600}
+footer ul{list-style:none}
+footer li{margin-bottom:.65rem;font-size:.93rem}
+footer a:hover{color:#fff}
+.f-contact a{display:block;color:#fff;font-weight:600}
+.f-contact .big{font-family:var(--display);font-size:1.9rem;letter-spacing:.02em;margin-bottom:.4rem}
+.social{display:inline-flex;margin-top:1.4rem;width:42px;height:42px;border:1px solid rgba(255,255,255,.2);place-items:center;justify-content:center;align-items:center}
+.social:hover{background:var(--blue);border-color:var(--blue)}
+.f-bot{border-top:1px solid rgba(255,255,255,.08);padding:1.5rem 0;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;font-size:.85rem}
+.f-bot a{color:#fff;font-weight:600}
+.f-bot a:hover{color:var(--red)}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+/* responsive */
+@media(max-width:1180px){nav ul{gap:1.05rem}nav a{font-size:.82rem}.h-call div{display:none}}
+@media(max-width:1020px){
+  nav{display:none;position:absolute;top:84px;left:0;right:0;background:var(--ink);padding:1rem 4vw 1.6rem}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:0}
+  nav li a{display:block;padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:1rem}
+  nav a.on::after{display:none}
+  .burger{display:block}
+  .hero-grid,.intro-grid,.svc-grid,.nfpa-grid,.report-grid,.rev-grid,.faq-grid,.areas .wrap{grid-template-columns:1fr;gap:3rem}
+  .hero-txt{padding:4rem 0 2rem}
+  .hero-img{margin:0 -4vw;height:460px}
+  .hero-img img{clip-path:polygon(0 8%,100% 0,100% 100%,0 100%)}
+  .hero-img::after{background:linear-gradient(180deg,var(--steel) 0%,rgba(29,33,38,0) 25%)}
+  .tag{left:4vw;bottom:24px;width:260px}
+  .svc-view{position:relative;top:0}
+  .reel{grid-template-columns:1fr 1fr}
+  .reel figure:first-child{grid-column:span 2;grid-row:auto}
+  .wall{grid-template-columns:repeat(2,1fr)}
+  .wall .lg,.wall .sm{grid-column:span 1;height:220px}
+  .f-grid{grid-template-columns:1fr 1fr}
+  .report-img .stamp{right:10px;top:-30px;width:120px;height:120px}
+}
+@media(max-width:640px){
+  .strip-r span:not(:first-child){display:none}
+  .strip .wrap{justify-content:center}
+  .strip .wrap>span{display:none}
+  .facts{grid-template-columns:1fr}
+  .fact+.fact{padding-left:0;border-left:0;border-top:1px solid var(--line)}
+  .proof-top{grid-template-columns:1fr}
+  .reel{grid-template-columns:1fr}
+  .reel figure:first-child{grid-column:auto}
+  .sheet-row{grid-template-columns:1fr}
+  .sheet-row dt{border-right:0;border-bottom:1px solid var(--line)}
+  .wall{grid-template-columns:1fr}
+  .towns{grid-template-columns:1fr}
+  .f-grid{grid-template-columns:1fr}
+  .months i{height:44px}
+  .board{padding:1.6rem}
+  details .a{padding-left:0;padding-right:0}
+  .logo img{height:54px}
+  .hero h1{font-size:2.55rem}
+  .eyebrow{font-size:.62rem;letter-spacing:.08em}
+  .hero .kicker{font-size:1.25rem}
+}
+</style>
+</head>
+<body>
+
+<div class="strip mono">
+  <div class="wrap">
+    <span><i class="dot"></i>Open 24 Hours · Free Estimates</span>
+    <div class="strip-r">
+      <a href="tel:+15877779669">+1 (587) 777-9669</a>
+      <span><a href="mailto:info@aahookleen.com">info@aahookleen.com</a></span>
+      <span>Client Satisfaction</span>
+    </div>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <a href="https://aahookleen.com/" class="logo"><img src="images/logo.png" alt="AAHOO KLEEN Certified Commercial &amp; Hood Cleaning"></a>
+    <nav id="nav">
+      <ul>
+        <li><a href="https://aahookleen.com/" class="on">Home</a></li>
+        <li><a href="https://aahookleen.com/about/">About</a></li>
+        <li><a href="https://aahookleen.com/services/">Services</a></li>
+        <li><a href="https://aahookleen.com/gallary/">Gallery</a></li>
+        <li><a href="https://aahookleen.com/nfpa/">NFPA</a></li>
+        <li><a href="https://aahookleen.com/contact/">Contact</a></li>
+        <li><a href="https://aahookleen.com/payment/">Payment</a></li>
+        <li><a href="https://aahookleen.com/faqs/">FAQs</a></li>
+        <li><a href="https://aahookleen.com/my-blogs/">My Blogs</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+15877779669" class="h-call">
+      <span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+      <div><small>Call for a free estimate</small><strong>587 777 9669</strong></div>
+    </a>
+    <button class="burger" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-txt">
+      <span class="eyebrow mono">Calgary's Trusted NFPA 96 Hood Cleaning</span>
+      <h1>Professional <em>Exhaust</em> Cleaning Services</h1>
+      <div class="kicker">Keep Your Kitchen Safe</div>
+      <p class="lead">Certified, documented commercial kitchen exhaust hood cleaning for restaurants across Calgary and surrounding areas. NFPA 96 compliant and fire inspection ready.</p>
+      <div class="hero-ctas">
+        <a href="tel:+15877779669" class="btn btn-red">Call +1 (587) 777-9669 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a href="https://aahookleen.com/services/" class="btn btn-line">Our Services</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="images/hero-kitchen.jpg" alt="Clean stainless steel commercial kitchen with exhaust hood">
+      <div class="tag">
+        <div class="tag-head"><div class="hole"></div><span class="mono" style="font-size:.6rem">Certified Hood &amp; Grease Solution</span><b>Service Record</b></div>
+        <div class="tag-body">
+          <div class="tag-row"><span>Standard</span><span>NFPA 96</span></div>
+          <div class="tag-row"><span>Typical clean</span><span>3 to 5 hours</span></div>
+          <div class="tag-row"><span>Proof</span><span>Photos emailed after service</span></div>
+          <div class="tag-row"><span>Status</span><span style="color:var(--red)">Fire inspection ready</span></div>
+        </div>
+        <div class="tag-foot" style="padding-bottom:1rem">Our Quality Is Our Reference</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rail" aria-hidden="true">
+  <div class="rail-track">
+    <span>Reduce Fire Risk</span><span>Pass Inspections</span><span>Protect Your Insurance</span><span>NFPA 96 Compliant</span><span>Free Estimates</span>
+    <span>Reduce Fire Risk</span><span>Pass Inspections</span><span>Protect Your Insurance</span><span>NFPA 96 Compliant</span><span>Free Estimates</span>
+  </div>
+</div>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="intro-grid">
+      <div class="rv">
+        <span class="sec-no mono">01 / Hood Cleaning in Calgary</span>
+        <h2>Clean hoods. <span>Safer</span> kitchens. No surprises at inspection.</h2>
+      </div>
+      <div class="rv">
+        <p>AAHOO KLEEN specializes in professional commercial kitchen exhaust hood cleaning for restaurants across Calgary and surrounding areas. We help restaurant owners reduce fire risk, pass inspections, and protect their insurance with certified, documented hood cleaning services.</p>
+        <a href="https://aahookleen.com/about/" class="btn btn-line">About AAHOO KLEEN</a>
+      </div>
+    </div>
+    <div class="facts rv">
+      <div class="fact"><b>5<sup>+</sup></b><span>Years trusted by Calgary's top restaurants</span></div>
+      <div class="fact"><b>3–5<sup>hrs</sup></b><span>For a standard hood system cleaning</span></div>
+      <div class="fact"><b>5.0<sup>★</sup></b><span>Rated on Google by our clients</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="svc-head rv">
+      <div><span class="sec-no mono">02 / Services We Offer</span><h2>From the hood<br>to the driveway</h2></div>
+      <p>Commercial kitchen exhaust cleaning for safety, efficiency and compliance, plus pressure washing, residential and post-construction cleaning.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-view rv" id="svcView">
+        <img src="images/hood-cleaning.jpg" class="on" alt="Kitchen exhaust hood cleaning">
+        <img src="images/kitchen-equipment.jpg" alt="Kitchen and cooking equipment cleaning">
+        <img src="images/grease-trap.jpg" alt="Grease trap cleaning">
+        <img src="images/pressure-washing.jpg" alt="Pressure washing a deck">
+        <img src="images/residential.jpg" alt="Residential cleaning">
+        <img src="images/post-construction.jpg" alt="Post-construction cleaning">
+        <span class="cap mono" id="svcCap">01 · Exhaust Hood</span>
+      </div>
+      <div class="rv">
+        <div class="grp mono">Commercial Kitchens</div>
+        <div class="svc-row on" data-i="0" data-c="01 · Exhaust Hood">
+          <span class="n">01</span><div><h3>Commercial Kitchen Exhaust Hood Cleaning &amp; Maintenance</h3><p>NFPA 96 compliant hood and exhaust cleaning that keeps your kitchen fire inspection ready, with photos of every cleaned area.</p></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+        <div class="svc-row" data-i="1" data-c="02 · Kitchen Equipment">
+          <span class="n">02</span><div><h3>General Kitchen &amp; Cooking Equipment Cleaning</h3><p>Thorough cleaning of your kitchen and cooking equipment for a safer, more efficient workspace.</p></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+        <div class="svc-row" data-i="2" data-c="03 · Grease Trap">
+          <span class="n">03</span><div><h3>Grease Trap Cleaning</h3><p>Professional grease trap cleaning to keep your commercial kitchen running clean and compliant.</p></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+        <div class="grp mono">Homes &amp; Property</div>
+        <div class="svc-row" data-i="3" data-c="04 · Pressure Washing">
+          <span class="n">04</span><div><h3>General Pressure Washing</h3><p>Pressure washing for driveways, fences, decks and patios.</p></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+        <div class="svc-row" data-i="4" data-c="05 · Residential">
+          <span class="n">05</span><div><h3>Residential Cleaning</h3><p>Reliable cleaning for your home, done with the same care we bring to commercial kitchens.</p></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+        <div class="svc-row" data-i="5" data-c="06 · Post-Construction">
+          <span class="n">06</span><div><h3>Post-Construction Cleaning</h3><p>Clean-up after building or renovation work, so your space is ready to use.</p></div>
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </div>
+        <a href="https://aahookleen.com/services/" class="btn btn-line svc-more">View All Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="proof" id="gallery">
+  <div class="wrap">
+    <div class="proof-top rv">
+      <div><span class="sec-no mono">03 / Gallery</span><h2>Before and after. <span>The grease</span> doesn't lie.</h2></div>
+      <a href="https://aahookleen.com/gallary/" class="btn btn-red">View More</a>
+    </div>
+    <div class="reel rv">
+      <figure><img src="images/before-after-1.jpg" alt="Exhaust fan before and after cleaning"><figcaption class="mono">Exhaust Fan</figcaption></figure>
+      <figure><img src="images/before-after-2.jpg" alt="Hood interior before and after cleaning"><figcaption class="mono">Hood Interior</figcaption></figure>
+      <figure><img src="images/before-after-3.jpg" alt="Hood panel before and after cleaning"><figcaption class="mono">Hood Panel</figcaption></figure>
+      <figure><img src="images/before-after-4.jpg" alt="Exhaust duct before and after cleaning"><figcaption class="mono">Exhaust Duct</figcaption></figure>
+      <div class="note"><p>Every cleaned area is photographed and emailed to you after service.</p><a href="https://aahookleen.com/gallary/" class="mono">See the gallery</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="nfpa" id="nfpa">
+  <div class="wrap nfpa-grid">
+    <div class="rv">
+      <div class="nfpa-badge"><img src="images/nfpa.jpg" alt="NFPA"><span class="mono">NFPA #96 Frequency Requirements</span></div>
+      <h2>How often does your hood need cleaning?</h2>
+      <p class="sub">It depends on what you cook. Pick your kitchen type to see the NFPA 96 cleaning schedule.</p>
+      <div class="picker" id="picker">
+        <button data-k="m">Heavy grease: woks, charbroilers, solid fuel <small>Monthly</small></button>
+        <button data-k="q" class="on">Moderate grease: fryers, grills <small>Quarterly</small></button>
+        <button data-k="s">Light cooking: baking, low heat <small>Semi-annual</small></button>
+        <button data-k="a">Minimal grease: schools, churches, seasonal <small>Annual</small></button>
+      </div>
+    </div>
+    <div class="board rv">
+      <div class="board-top"><b id="bFreq">Quarterly</b><span class="per" id="bPer">4 cleanings / year</span></div>
+      <div class="months" id="months"></div>
+      <div class="mlabels"><span>J</span><span>F</span><span>M</span><span>A</span><span>M</span><span>J</span><span>J</span><span>A</span><span>S</span><span>O</span><span>N</span><span>D</span></div>
+      <p id="bTxt">Kitchens with moderate grease production, like fryers and grills, need cleaning roughly every three months. Most restaurants and commercial kitchens fall into this category.</p>
+      <div class="ex" id="bEx"></div>
+    </div>
+  </div>
+</section>
+
+<section class="report">
+  <div class="wrap report-grid">
+    <div class="report-img rv">
+      <img src="images/hood-cleaning.jpg" alt="Technician cleaning a commercial kitchen exhaust hood">
+      <div class="stamp"><img src="images/mfs-certified.jpg" alt="MFS Exhaust Hood Cleaning Certified"></div>
+    </div>
+    <div class="rv">
+      <span class="sec-no mono">04 / On Service Day</span>
+      <h2>What to expect when we clean</h2>
+      <dl class="sheet">
+        <div class="sheet-row"><dt>Duration</dt><dd>A standard hood system cleaning takes <b>3 to 5 hours</b>.</dd></div>
+        <div class="sheet-row"><dt>Proof</dt><dd>Our technicians <b>photograph the cleaned areas</b> and email them to you, along with any deficiencies found.</dd></div>
+        <div class="sheet-row"><dt>Access</dt><dd>You don't need to stay on site. <b>Leave us a key</b> or tell the technician how to lock up.</dd></div>
+        <div class="sheet-row"><dt>Filters</dt><dd>Filters are not included in the price, but can be <b>added on request</b> for an extra fee.</dd></div>
+        <div class="sheet-row"><dt>Chemical</dt><dd>We use a <b>diluted sodium hydroxide</b> solution.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="creds">
+  <div class="wrap">
+    <div class="creds-head rv">
+      <span class="sec-no mono" style="color:#ff8d92">05 / Certificates</span>
+      <h2>Certified. Insured. Licensed.</h2>
+      <p>We adhere to NFPA 96 standards for ventilation control and fire protection of commercial cooking operations.</p>
+    </div>
+    <div class="wall rv">
+      <div class="c lg"><img src="images/certificate-1.jpg" alt="MFS Trade School hood cleaning certification"><span class="lbl">MFS Certification</span></div>
+      <div class="c lg"><img src="images/mfs-certified.jpg" alt="MFS Exhaust Hood Cleaning Certified badge"><span class="lbl">Hood Cleaning Certified</span></div>
+      <div class="c lg"><img src="images/certificate-2.jpg" alt="MFS Trade School certification"><span class="lbl">NFPA 96 Training</span></div>
+      <div class="c sm"><img src="images/nfpa.jpg" alt="NFPA"><span class="lbl">NFPA 96</span></div>
+      <div class="c sm"><img src="images/wcb-alberta.jpg" alt="Workers' Compensation Board Alberta"><span class="lbl">WCB Alberta</span></div>
+      <div class="c sm"><img src="images/business-licence.jpg" alt="City of Calgary business licence"><span class="lbl">Calgary Business Licence</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap rev-grid">
+    <div class="rev-side rv">
+      <span class="sec-no mono">06 / Client Testimonials</span>
+      <h2>What Calgary kitchens say</h2>
+      <div class="g-score"><b>5.0</b><div><div class="stars">★★★★★</div><span class="mono" style="color:var(--mute)">Google reviews</span></div></div>
+      <a href="https://admin.trustindex.io/api/googleWriteReview?place-id=ChIJyyJRufKdcVMRTBlMk5hedyE" target="_blank" rel="noopener" class="btn btn-red">Write a Review</a>
+    </div>
+    <div class="rev-list rv">
+      <div class="rev"><div class="av">M</div><div><div class="stars">★★★★★</div><blockquote>I've been with these guys for around 5 years and I couldn't be happier. They've given me the best pricing in YYC, and they're very straightforward and get right to cleaning. They don't slack off at all. 100% recommend!</blockquote><cite>Marwan Fahimi<small>Google</small></cite></div></div>
+      <div class="rev"><div class="av">H</div><div><div class="stars">★★★★★</div><blockquote>They did a great job and did the cleaning for all 3 of my restaurants. I couldn't be any happier with their work. Thank you so much, Ahmad!</blockquote><cite>Hameed &amp; Naveen<small>Google</small></cite></div></div>
+      <div class="rev"><div class="av">M</div><div><div class="stars">★★★★★</div><blockquote>Great job, thank you AAHOO!</blockquote><cite>Muzhda Fahimi<small>Google</small></cite></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <span class="sec-no mono">07 / FAQs</span>
+      <h2>Questions, answered</h2>
+      <p>Still not sure about something? Give us a call and we'll walk you through it.</p>
+      <a href="https://aahookleen.com/faqs/" class="btn btn-line">Read More Questions</a>
+    </div>
+    <div class="rv">
+      <details open><summary><span class="q">Q.01</span>How long does a hood system cleaning take?<span class="pm">+</span></summary><div class="a">A standard hood system cleaning takes 3 to 5 hours.</div></details>
+      <details><summary><span class="q">Q.02</span>How do I know that the entire system was serviced?<span class="pm">+</span></summary><div class="a">Our technicians take photos of the cleaned areas and email them to you, noting any deficiencies.</div></details>
+      <details><summary><span class="q">Q.03</span>How often does a hood system need to be cleaned?<span class="pm">+</span></summary><div class="a">Most restaurants and commercial kitchens need quarterly service. Systems using solid fuel need monthly service. Low-grease locations such as schools, churches or seasonal sites may only need annual service.</div></details>
+      <details><summary><span class="q">Q.04</span>Do I have to be on site for the entire cleaning?<span class="pm">+</span></summary><div class="a">No. You can provide a key, or tell the technician how to lock up when the job is done.</div></details>
+      <details><summary><span class="q">Q.05</span>Are filters included in the price?<span class="pm">+</span></summary><div class="a">Filters are not included, but we can clean them on request for an extra fee.</div></details>
+      <details><summary><span class="q">Q.06</span>What type of chemical do you use?<span class="pm">+</span></summary><div class="a">We use a diluted sodium hydroxide solution.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="contact">
+  <div class="areas-bg"></div>
+  <div class="wrap">
+    <div class="rv">
+      <span class="sec-no mono" style="color:#ff8d92">08 / Free Estimates</span>
+      <h2>Keep your kitchen <span>safe.</span> Call today.</h2>
+      <p class="lead">Talk to us about hood cleaning, grease traps, kitchen equipment, pressure washing or residential cleaning. Free estimates.</p>
+      <div class="hero-ctas">
+        <a href="tel:+15877779669" class="btn btn-red">+1 (587) 777-9669</a>
+        <a href="mailto:info@aahookleen.com" class="btn btn-line">info@aahookleen.com</a>
+      </div>
+    </div>
+    <div class="town-box rv">
+      <span class="mono">Service Locations</span>
+      <ul class="towns">
+        <li>Calgary</li><li>Red Deer</li><li>Okotoks</li><li>Olds</li><li>High River</li><li>Banff</li><li>Sylvan Lake</li><li>Airdrie</li><li>Red Deer County</li><li>Chestermere</li>
+      </ul>
+      <div class="open24"><i class="dot" style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ccf6e"></i>Open 24 Hours</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <img src="images/logo-badge.png" alt="AAHOO KLEEN Our Quality Is Our Reference">
+        <p>Certified commercial kitchen exhaust hood and grease solution. Our quality is our reference.</p>
+        <a class="social" href="https://www.facebook.com/profile.php?id=61568729621859" target="_blank" rel="noopener" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M14 8h3V4h-3c-2.8 0-5 2.2-5 5v2H7v4h2v9h4v-9h3l1-4h-4V9c0-.6.4-1 1-1z"/></svg></a>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="https://aahookleen.com/about/">About</a></li>
+          <li><a href="https://aahookleen.com/gallary/">Gallery</a></li>
+          <li><a href="https://aahookleen.com/nfpa/">NFPA</a></li>
+          <li><a href="https://aahookleen.com/payment/">Payment</a></li>
+          <li><a href="https://aahookleen.com/faqs/">FAQs</a></li>
+          <li><a href="https://aahookleen.com/my-blogs/">My Blogs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://aahookleen.com/services/">Exhaust Hood Cleaning</a></li>
+          <li><a href="https://aahookleen.com/services/">Kitchen Equipment Cleaning</a></li>
+          <li><a href="https://aahookleen.com/services/">Grease Trap Cleaning</a></li>
+          <li><a href="https://aahookleen.com/services/">Pressure Washing</a></li>
+          <li><a href="https://aahookleen.com/services/">Residential Cleaning</a></li>
+          <li><a href="https://aahookleen.com/services/">Post-Construction Cleaning</a></li>
+        </ul>
+      </div>
+      <div class="f-contact">
+        <h4>Contact</h4>
+        <a href="tel:+15877779669" class="big">+1 (587) 777-9669</a>
+        <a href="mailto:info@aahookleen.com">info@aahookleen.com</a>
+        <a href="mailto:aahooltd@gmail.com" style="font-weight:400;color:#9ba2ab;margin-top:.3rem">Support: aahooltd@gmail.com</a>
+        <p style="margin-top:1.2rem;font-size:.9rem">Open 24 Hours<br>Calgary &amp; surrounding areas</p>
+      </div>
+    </div>
+  </div>
+  <div class="wrap f-bot">
+    <span>© 2026 AAHOO KLEEN. All rights reserved.</span>
+    <span>Design by <a href="https://cleaningdigital.ca/" target="_blank" rel="noopener">Cleaning Digital</a>.</span>
+  </div>
+</footer>
+
+<script>
+// services hover/click swap
+const rows=document.querySelectorAll('.svc-row'),imgs=document.querySelectorAll('#svcView img'),cap=document.getElementById('svcCap');
+rows.forEach(r=>{const go=()=>{rows.forEach(x=>x.classList.remove('on'));r.classList.add('on');imgs.forEach((im,i)=>im.classList.toggle('on',i==r.dataset.i));cap.textContent=r.dataset.c};r.addEventListener('mouseenter',go);r.addEventListener('click',go)});
+
+// NFPA frequency board
+const F={
+ m:{t:'Monthly',p:'12 cleanings / year',h:[0,1,2,3,4,5,6,7,8,9,10,11],d:'Kitchens with heavy grease-producing equipment, like woks or charbroilers, need monthly cleaning. Any system using solid fuel also needs monthly service.',e:['Woks','Charbroilers','Solid fuel']},
+ q:{t:'Quarterly',p:'4 cleanings / year',h:[0,3,6,9],d:'Kitchens with moderate grease production, like fryers and grills, need cleaning roughly every three months. Most restaurants and commercial kitchens fall into this category.',e:['Fryers','Grills','Most restaurants']},
+ s:{t:'Semi-Annual',p:'2 cleanings / year',h:[0,6],d:'Kitchens with light cooking, such as baking or low-heat cooking methods, need cleaning twice a year.',e:['Baking','Low-heat cooking']},
+ a:{t:'Annual',p:'1 cleaning / year',h:[0],d:'Kitchens with minimal grease or light cooking need cleaning once a year.',e:['Schools','Churches','Seasonal locations']}
+};
+const months=document.getElementById('months');for(let i=0;i<12;i++)months.appendChild(document.createElement('i'));
+function setF(k){const f=F[k];document.getElementById('bFreq').textContent=f.t;document.getElementById('bPer').textContent=f.p;document.getElementById('bTxt').textContent=f.d;
+ document.getElementById('bEx').innerHTML=f.e.map(x=>'<span>'+x+'</span>').join('');
+ [...months.children].forEach((m,i)=>m.classList.toggle('hit',f.h.includes(i)));
+ document.querySelectorAll('#picker button').forEach(b=>b.classList.toggle('on',b.dataset.k==k))}
+document.querySelectorAll('#picker button').forEach(b=>b.addEventListener('click',()=>setF(b.dataset.k)));setF('q');
+
+// reveal
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
